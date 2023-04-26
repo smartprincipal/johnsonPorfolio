@@ -1,4 +1,5 @@
 import React from 'react'
+import { useForm } from 'react-hook-form'
 import contact from '../public/assets/me2.jpg'
 import Image from 'next/image'
 import { AiOutlineMail } from 'react-icons/ai'
@@ -8,6 +9,17 @@ import Link from 'next/link'
 import {HiOutlineChevronDoubleUp} from 'react-icons/hi'
 
 const Contact = () => {
+  const {register, trigger, formState:{errors}} = useForm();
+
+  const onSubmit= async (e) => {
+    const isValid = await trigger ();
+    if(!isValid) {
+      e.preventDefault();
+    }
+  }
+
+
+
   return (
     <div id='contact' className='w-full lg:h-screen'>
      <div className='max-w-[1240px] m-auto px-2 py-16 w-full'>
@@ -69,36 +81,122 @@ const Contact = () => {
         {/* RIGHT SIDE */}
         <div className='col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4'>
          <div className='p-4'>
-          <form action="">
+          <form
+          target='_blank'
+          onSubmit={onSubmit}
+          method='POST'
+           action="https://formsubmit.co/westsideyjay@gmail.com">
            <div className='grid md:grid-cols-2 gap-4 w-full py-2'>
             <div className='flex flex-col'>
-             <label htmlFor="" className='uppercase text-sm py-2'>Name</label>
-             <input className='border-2 rounded-lg p-3 flex border-gray-300' type="text" />
+             <label 
+             className='uppercase text-sm py-2'>
+              Name
+             </label>
+
+             <input 
+             className='border-2 rounded-lg p-3 flex border-gray-300' 
+             type="text"
+             {...register("name" , {
+              required: true,
+              maxLength:100,
+             })} 
+             />
+             {errors.name && (
+         <p className='mt-1 text-[red]'>
+            {errors.name.type === "required" && "This field is required."}
+            {errors.name.type === "maxLength" && "Too long."}
+
+         </p>
+        )}
             </div>
 
             <div className='flex flex-col'>
-             <label htmlFor="" className='uppercase text-sm py-2'>Phone Number</label>
-             <input className='border-2 rounded-lg p-3 flex border-gray-300' type="text" />
+             <label 
+             htmlFor="" 
+             className='uppercase text-sm py-2'>
+              Phone Number
+              </label>
+
+             <input 
+             className='border-2 rounded-lg p-3 flex border-gray-300' 
+             type="text" 
+             {...register("phoneNumber" , {
+              required: true,
+              maxLength:11,
+             })}
+             />
+             {errors.phoneNumber && (
+         <p className='mt-1 text-[red]'>
+            {errors.phoneNumber.type === "required" && "This field is required."}
+            {errors.phoneNumber.type === "maxLength" && "Too long."}
+
+         </p>
+        )}
             </div>
            </div>
 
            <div className='flex flex-col py-2'>
            <div className='flex flex-col'>
-             <label htmlFor="" className='uppercase text-sm py-2'>Email</label>
-             <input className='border-2 rounded-lg p-3 flex border-gray-300' type="email" />
+             <label 
+             htmlFor="" 
+             className='uppercase text-sm py-2'>
+              Email
+              </label>
+             <input 
+             className='border-2 rounded-lg p-3 flex border-gray-300' 
+             type="email" 
+             {...register("email" , {
+              required: true,
+              pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+             })}
+             />
+             {errors.email && (
+         <p className='mt-1 text-[red]'>
+            {errors.email.type === "required" && "This field is required."}
+            {errors.email.type === "pattern" && "Invalid email address."}
+
+         </p>
+        )}
             </div>
            </div>
 
            <div className='flex flex-col py-2'>
            <div className='flex flex-col'>
              <label htmlFor="" className='uppercase text-sm py-2'>Subject</label>
-             <input className='border-2 rounded-lg p-3 flex border-gray-300' type="text" />
+             <input 
+             className='border-2 rounded-lg p-3 flex border-gray-300' 
+             type="text" 
+             {...register("subject" , {
+              required: true,
+              maxLength:50,
+             })} />
+             {errors.subject && (
+         <p className='mt-1 text-[red]'>
+            {errors.subject.type === "required" && "This field is required."}
+            {errors.subject.type === "maxLength" && "Too long."}
+
+         </p>
+        )}
             </div>
            </div>
            <div className='flex flex-col py-2'>
            <div className='flex flex-col'>
              <label htmlFor="" className='uppercase text-sm py-2'>Message</label>
-             <textarea className='border-2 rounded-lg p-3  border-gray-300' rows='10'></textarea>
+             <textarea 
+             className='border-2 rounded-lg p-3  border-gray-300' 
+             rows='10'
+             {...register("message" , {
+              required: true,
+              maxLength:1500,
+             })} 
+             ></textarea>
+             {errors.message && (
+         <p className='mt-1 text-[red]'>
+            {errors.message.type === "required" && "This field is required."}
+            {errors.message.type === "maxLength" && "Too long."}
+
+         </p>
+        )}
             </div>
            </div>
 
