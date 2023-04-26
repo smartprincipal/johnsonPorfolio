@@ -1,5 +1,5 @@
 import React from 'react'
-import ehyaa from '../../public/assets/projects/ehyaa.jpg'
+import ehyaa from '../../public/assets/projects/Ehyaa.jpg'
 import Image from 'next/image'
 import {RiRadioButtonFill} from 'react-icons/ri'
 import Link from 'next/link'
