@@ -22,42 +22,42 @@ const Projects = () => {
        <Projectitem 
        title='EVOGYM' 
        backgroundImg={fitness} 
-       projectUrl='https://fitness-typescript-seven.vercel.app/'
+       projectUrl='/evogym'
        build='Typescript'
        />
 
       <Projectitem 
        title='MBBPIL' 
        backgroundImg={MBBPIL} 
-       projectUrl='https://mbbpil.vercel.app/'
+       projectUrl='/mbbpil'
        build='React'
        />
 
       <Projectitem 
        title='Easy Rent' 
        backgroundImg={Easyrent} 
-       projectUrl='https://easyrentt.vercel.app/'
+       projectUrl='/easyrent'
        build='React'
        />
 
       <Projectitem 
        title='Tompurse' 
        backgroundImg={Tompurse} 
-       projectUrl='https://tompurse.vercel.app/'
+       projectUrl='/tompurse'
        build='Javascript'
        />
 
       <Projectitem 
        title='Ehya' 
        backgroundImg={Ehyaa} 
-       projectUrl='https://ehya.vercel.app/'
+       projectUrl='/ehya'
        build='HTML & CSS'
        />
 
 <Projectitem 
        title='Afrosound' 
        backgroundImg={Afrosound} 
-       projectUrl='https://afrosound.vercel.app/'
+       projectUrl='/afrosound'
        build='HTML & CSS'
        />
 

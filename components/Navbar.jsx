@@ -4,10 +4,33 @@ import React, {useEffect, useState} from 'react'
 import {AiOutlineClose, AiOutlineMail, AiOutlineMenu} from 'react-icons/ai'
 import {FaLinkedinIn, FaGithub} from 'react-icons/fa'
 import {BsFillPersonLinesFill} from 'react-icons/bs'
+import { useRouter } from 'next/router'
 
 const Navbar = () => {
-  const [nav, setNav] =useState(false)
-  const [shadow, setShadow] = useState(false)
+  const [nav, setNav] =useState(false);
+  const [shadow, setShadow] = useState(false);
+  const [navBg, setNavBg] = useState('#ecf0f3');
+  const [linkColor, setLinkColor] =useState('#1f2937');
+  const router =useRouter();
+
+  useEffect(()=> {
+    if(
+      router.asPath === '/evogym'||
+      router.asPath === '/mbbpil'||
+      router.asPath === '/easyrent'||
+      router.asPath === '/tompurse'||
+      router.asPath === '/ehya'||
+      router.asPath === '/afrosound'
+    )
+    {
+      setNavBg('transparent')
+      setLinkColor('#ecf0f3')
+    }else{
+      setNavBg('#ecf0f3');
+      setLinkColor('#1f2937')
+    }
+
+  }, [router])
 
   const handleNav = () =>{
     setNav(!nav)
@@ -23,7 +46,9 @@ const Navbar = () => {
     window.addEventListener('scroll' , handleShadow);
   }, []);
   return (
-    <div className={shadow ? 'fixed w-full h-20 shadow-xl z-[100] ease-in-out duration-300'
+    <div
+    style={{backgroundColor: `${navBg}`}}
+    className={shadow ? 'fixed w-full h-20 shadow-xl z-[100] ease-in-out duration-300'
     : 'fixed w-full h-20 z-[100]'}>
       {/* NAVIGATION BAR */}
       <div className='flex justify-between items-center w-full h-full px-2 
@@ -42,7 +67,9 @@ const Navbar = () => {
 
           {/* MENU */}
          <div>
-          <ul className='hidden md:flex'>
+          <ul
+          style={{color:`${linkColor}`}}
+           className='hidden md:flex'>
             <Link href='/'>
               <li className='ml-10 text-sm hover:border-b uppercase'>Home</li>
             </Link>
@@ -111,18 +138,35 @@ const Navbar = () => {
           <div className='pt-40 '>
               <p className='uppercase tracking-widest text-[#5651e5]'>Let's connect</p>
               <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
+
+              <a href='linkedin.com/in/johnson-oluwayemi-b85290110'
+              target='_blank'
+              rel='noreferrer'>
                 <div className='rounded-full shadow-lg shadow-gray-400  p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
                 <FaLinkedinIn/>
                 </div>
+                </a>
+                
+                <a
+              href='https://github.com/smartprincipal'
+              target='_blank'
+              rel='noreferrer'>
                 <div className='rounded-full shadow-lg shadow-gray-400  p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
                 <FaGithub/>
                 </div>
+                 </a>
+
+                 <Link href='/#contact'>
                 <div className='rounded-full shadow-lg shadow-gray-400  p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
                 <AiOutlineMail/>
                 </div>
+                 </Link>
+
+                 <Link href='/resume'>
                 <div className='rounded-full shadow-lg shadow-gray-400  p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
                 <BsFillPersonLinesFill/>
                 </div>
+                 </Link>
 
               </div>
           </div>
