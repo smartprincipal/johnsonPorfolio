@@ -11,7 +11,7 @@ const evogym = () => {
       <div className='absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/80 z-10'>
        <Image src={fitness} alt='evogym-image' className='absolute z-1' layout='fill' objectFit='cover'/>
 
-       <div className='absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-black z-10 p-2'>
+       <div className='absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2'>
         <h2 className='py-2'>Evogym</h2>
         <h3>Typescript & Tailwind CSS</h3>
        </div>
@@ -24,10 +24,14 @@ const evogym = () => {
         <p>Project</p>
         <h2>Overview</h2>
         <p>
-            This app was built using Typescript and is hosted on vercel. Users
+            This app was built using Typescript and Tailwind CSS and is hosted on vercel. Users
             are able to see the classses evogym provides and also contact them for more enquiries.
+            I used Framer motion during implementation, react hoot and form submit to pass in message and content written in the contact form 
+            to my email.
           </p>
+          <Link href='https://fitness-typescript-seven.vercel.app/'>
       <button className='px-8 py-2 mt-4 mr-8'>Demo</button>
+          </Link>
       <button className='px-8 py-2 mt-4'>Code</button>
        
        </div>

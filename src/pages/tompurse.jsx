@@ -11,9 +11,9 @@ const tompurse = () => {
       <div className='absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/80 z-10'>
        <Image src={Tompurse} alt='evogym-image' className='absolute z-1' layout='fill' objectFit='cover'/>
 
-       <div className='absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-black z-10 p-2'>
-        <h2 className='py-2'>Evogym</h2>
-        <h3>HTML, JAVASCRIPT & CSS</h3>
+       <div className='absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2'>
+        <h2 className='py-2'>Tompurse</h2>
+        <h3>ReactJS</h3>
        </div>
 
       </div>
@@ -24,10 +24,13 @@ const tompurse = () => {
         <p>Project</p>
         <h2>Overview</h2>
         <p>
-            This app was built using Typescript and is hosted on vercel. Users
-            are able to see the classses evogym provides and also contact them for more enquiries.
+            This app was built using React Js and is hosted on Vercel. Users
+            can't do much on the website, because the website was to test my efficiency of designing with react only.
+            I implementated the login and signup validation and also routed the pages 
           </p>
+          <Link href='https://tompurse.vercel.app/'>
       <button className='px-8 py-2 mt-4 mr-8'>Demo</button>
+          </Link>
       <button className='px-8 py-2 mt-4'>Code</button>
        
        </div>
@@ -38,6 +41,8 @@ const tompurse = () => {
           <p className='text-gray-600 py-2 flex items-center'> <RiRadioButtonFill/> HTML</p>
           <p className='text-gray-600 py-2 flex items-center'> <RiRadioButtonFill/> CSS</p>
           <p className='text-gray-600 py-2 flex items-center'> <RiRadioButtonFill/> Javascript</p>
+          <p className='text-gray-600 py-2 flex items-center'> <RiRadioButtonFill/> React</p>
+
          </div>
         </div>
        </div>
