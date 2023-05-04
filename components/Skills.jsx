@@ -6,9 +6,12 @@ import nextjs from '../public/assets/skills/nextjs.png'
 import javascript from '../public/assets/skills/javascript.png'
 import react from '../public/assets/skills/react.png'
 import typescript from '../public/assets/skills/typescript.png'
-import firebase from '../public/assets/skills/firebase.png'
+// import firebase from '../public/assets/skills/firebase.png'
 import tailwind from '../public/assets/skills/tailwind.png'
 import github1 from '../public/assets/skills/github1.png'
+import sass from '../public/assets/skills/sass.png'
+import vite from '../public/assets/skills/vite.png'
+
 
 
 const Skills = () => {
@@ -91,7 +94,7 @@ const Skills = () => {
 
         </div>
 
-        <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
+        {/* <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
          <div className='grid grid-col-2 gap-4 justify-center items-center md:flex'>
           <div className='m-auto'>
            <Image src={firebase} alt='firebase' className='w-[64px] h-[64px]'/>
@@ -101,7 +104,7 @@ const Skills = () => {
           </div>
          </div>
 
-        </div>
+        </div> */}
 
         <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
          <div className='grid grid-col-2 gap-4 justify-center items-center md:flex'>
@@ -122,6 +125,28 @@ const Skills = () => {
           </div>
           <div className='flex flex-col items-center justify-center'>
            <h3>GITHUB</h3>
+          </div>
+         </div>
+
+        </div>
+        <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
+         <div className='grid grid-col-2 gap-4 justify-center items-center md:flex'>
+          <div className='m-auto'>
+           <Image src={sass} alt='sass' className='w-[64px] h-[64px]'/>
+          </div>
+          <div className='flex flex-col items-center justify-center'>
+           <h3>SASS</h3>
+          </div>
+         </div>
+
+        </div>
+        <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
+         <div className='grid grid-col-2 gap-4 justify-center items-center md:flex'>
+          <div className='m-auto'>
+           <Image src={vite} alt='vite' className='w-[64px] h-[64px]'/>
+          </div>
+          <div className='flex flex-col items-center justify-center'>
+           <h3>VITE</h3>
           </div>
          </div>
 
