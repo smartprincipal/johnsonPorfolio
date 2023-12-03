@@ -24,13 +24,12 @@ const evogym = () => {
         <p>Project</p>
         <h2>Overview</h2>
         <p>
-            This app was built using Typescript and Tailwind CSS and is hosted on vercel. Users
-            are able to see the classses evogym provides and also contact them for more enquiries.
-            I used Framer motion during implementation, react hoot and form submit to pass in message and content written in the contact form 
+            This app was built using Typescript and styled with Tailwind CSS and is hosted on vercel. Users are only allowed to view the classses evogym provides and also contact them for more enquiries.
+            I used Framer motion during implementation, react hook and form submit to pass in message and content written in the contact form 
             to my email.
           </p>
           <Link href='https://fitness-typescript-seven.vercel.app/'>
-      <button className='px-8 py-2 mt-4 mr-8'>Demo</button>
+      <button className='px-8 py-2 mt-4 mr-8'>Visit website</button>
           </Link>
       <button className='px-8 py-2 mt-4'>Code</button>
        

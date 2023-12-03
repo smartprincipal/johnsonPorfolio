@@ -9,7 +9,7 @@ const ehya = () => {
     <div className='w-full '>
      <div className='w-screen h-[30vh] lg:h-[40vh] relative'>
       <div className='absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/80 z-10'>
-       <Image src={ehyaa} alt='evogym-image' className='absolute z-1' layout='fill' objectFit='cover'/>
+       <Image src={ehyaa} alt='ehya-image' className='absolute z-1' layout='fill' objectFit='cover'/>
 
        <div className='absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2'>
         <h2 className='py-2'>EHYA</h2>
@@ -28,7 +28,7 @@ const ehya = () => {
             site was built in other to test my proficiency on Javascript
           </p>
           <Link href='https://ehya.vercel.app/'>
-      <button className='px-8 py-2 mt-4 mr-8'>Demo</button>
+      <button className='px-8 py-2 mt-4 mr-8'>Visit website</button>
           </Link>
       <button className='px-8 py-2 mt-4'>Code</button>
        

@@ -37,14 +37,14 @@ const Contact = () => {
          <div>
           <h2 className='py-2'>Johnson Oluwayemi</h2>
           <p>Font-End Developer</p>
-          <p className='py-4'>I am available for freelancer or full-time positions. Contact me and let's talk. </p>
+          <p className='py-4'>I am available for gigs, full-time or remote positions. Contact me and let's talk. </p>
          </div>
          <div>
           <div>
            <p className='uppercase pt-8 '>Connect with me</p>
 
            <div className='flex items-center justify-between py-4'>
-           <a href='linkedin.com/in/johnson-oluwayemi-b85290110'
+           <a href='https://linkedin.com/in/johnson-oluwayemi-b85290110'
               target='_blank'
               rel='noreferrer'>
            <div className=' rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>

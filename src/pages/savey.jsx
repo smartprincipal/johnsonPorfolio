@@ -1,19 +1,19 @@
 import React from 'react'
-import Easyrent from '../../public/assets/projects/Easyrent.jpg'
+import getsavey from '../../public/assets/projects/getsavey.png'
 import Image from 'next/image'
 import {RiRadioButtonFill} from 'react-icons/ri'
 import Link from 'next/link'
 
-const easyrent = () => {
+const evogym = () => {
   return (
     <div className='w-full '>
      <div className='w-screen h-[30vh] lg:h-[40vh] relative'>
       <div className='absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/80 z-10'>
-       <Image src={Easyrent} alt='easyrent-image' className='absolute z-1' layout='fill' objectFit='cover'/>
+       <Image src={getsavey} alt='savey-image' className='absolute z-1' layout='fill' objectFit='cover'/>
 
        <div className='absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2'>
-        <h2 className='py-2'>Easy Rent</h2>
-        <h3>React & CSS</h3>
+        <h2 className='py-2'>Get Savey</h2>
+        <h3>React & Tailwind CSS</h3>
        </div>
 
       </div>
@@ -24,14 +24,11 @@ const easyrent = () => {
         <p>Project</p>
         <h2>Overview</h2>
         <p>
-        <p>
-            This app was built using React JS and is hosted on Vercel. <br />
-            This web app was implemented as an intern in grazac academy
-            I worked with team of intern developers to implement the UI of the web app. 
-            The consumed restful APIs was supplied by the backend team.
+            This app was built using React and styled with Tailwind CSS. Users can track their spending, make budget and invest their money for long or short tem purpose.
+            I used Framer motion during implementation, react hook and form submit to pass in message and content written in the contact form 
+            to my email.
           </p>
-          </p>
-          <Link href='https://easyrentt.vercel.app/'>
+          <Link href='https://getsavey.com/'>
       <button className='px-8 py-2 mt-4 mr-8'>Visit website</button>
           </Link>
       <button className='px-8 py-2 mt-4'>Code</button>
@@ -42,9 +39,9 @@ const easyrent = () => {
          <p className='text-center font-bold pb-2'>Technologies</p>
          <div className='grid grid-cols-3 md:grid-cols-1'>
           <p className='text-gray-600 py-2 flex items-center'> <RiRadioButtonFill/> React</p>
-          <p className='text-gray-600 py-2 flex items-center'> <RiRadioButtonFill/> CSS</p>
+          <p className='text-gray-600 py-2 flex items-center'> <RiRadioButtonFill/> Tailwind</p>
           <p className='text-gray-600 py-2 flex items-center'> <RiRadioButtonFill/> Javascript</p>
-          <p className='text-gray-600 py-2 flex items-center'> <RiRadioButtonFill/> Restful API</p>
+          {/* <p className='text-gray-600 py-2 flex items-center'> <RiRadioButtonFill/> Form Submit</p> */}
          </div>
         </div>
        </div>
@@ -56,4 +53,4 @@ const easyrent = () => {
   )
 }
 
-export default easyrent
+export default evogym

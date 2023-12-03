@@ -1,20 +1,20 @@
 import React from 'react'
-import Afrosound from '../../public/assets/projects/Afrosound.jpg'
+import ods from '../../public/assets/projects/ods.png'
 import Image from 'next/image'
 import {RiRadioButtonFill} from 'react-icons/ri'
 import Link from 'next/link'
 
-const afrosound = () => {
+const evogym = () => {
   return (
     <div className='w-full '>
      <div className='w-screen h-[30vh] lg:h-[40vh] relative'>
       <div className='absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/80 z-10'>
-       <Image src={Afrosound} alt='afrosound-image' className='absolute z-1' layout='fill' objectFit='cover'/>
+       <Image src={ods} alt='ods-image' className='absolute z-1' layout='fill' objectFit='cover'/>
 
-       <div className='absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] z-10 p-2 text-white'>
-        <h2 className='py-2'>Afrosound</h2>
-        <h3>HTML & CSS</h3>
-       </div>
+       {/* <div className='absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2'>
+        <h2 className='py-2'>Ogun Digital Summit</h2>
+        <h3>Nextjs & Tailwind CSS</h3>
+       </div> */}
 
       </div>
      </div>
@@ -24,9 +24,10 @@ const afrosound = () => {
         <p>Project</p>
         <h2>Overview</h2>
         <p>
-            This app was built using pure HTML and CSS and is hosted on Vercel. This web app has no functionality, it's was an implementation of a UI given to me . This app was built while iwas an intern
+            This app was built using Nextjs and styled with Tailwind CSS. Users can fill form to attend the gathering, speaker can also volunteer to speak.
+            I used Framer motion during implementation.
           </p>
-          <Link href='https://afrosound.vercel.app/'>
+          <Link href='https://ogundigitalsummit.com/'>
       <button className='px-8 py-2 mt-4 mr-8'>Visit website</button>
           </Link>
       <button className='px-8 py-2 mt-4'>Code</button>
@@ -36,8 +37,8 @@ const afrosound = () => {
         <div className='p-2'>
          <p className='text-center font-bold pb-2'>Technologies</p>
          <div className='grid grid-cols-3 md:grid-cols-1'>
-          <p className='text-gray-600 py-2 flex items-center'> <RiRadioButtonFill/> HTML</p>
-          <p className='text-gray-600 py-2 flex items-center'> <RiRadioButtonFill/> CSS</p>
+          <p className='text-gray-600 py-2 flex items-center'> <RiRadioButtonFill/> NextJS</p>
+          <p className='text-gray-600 py-2 flex items-center'> <RiRadioButtonFill/> Tailwind</p>
          </div>
         </div>
        </div>
@@ -49,4 +50,4 @@ const afrosound = () => {
   )
 }
 
-export default afrosound
+export default evogym
