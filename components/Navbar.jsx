@@ -20,7 +20,8 @@ const Navbar = () => {
       router.asPath === '/easyrent'||
       router.asPath === '/tompurse'||
       router.asPath === '/ehya'||
-      router.asPath === '/afrosound'
+      router.asPath === '/afrosound'||
+      router.asPath === 'getsavey'
     )
     {
       setNavBg('transparent')
@@ -120,19 +121,19 @@ const Navbar = () => {
         <div className='p-4 flex flex-col'>
           <ul className='uppercase'>
           <Link href='/'>
-              <li onClick={()=> setNav(false)} className='py-4 text-sm'>Home</li>
+              <li onClick={()=> setNav(false)} className='py-4 text-sm hover:text-[42px]'>Home</li>
             </Link>
             <Link href='/#about'>
-              <li onClick={()=> setNav(false)} className='py-4 text-sm'>About</li>
+              <li onClick={()=> setNav(false)} className='py-4 text-sm hover:text-[42px]'>About</li>
             </Link>
             <Link href='/#skills'>
-              <li onClick={()=> setNav(false)} className='py-4 text-sm'>Skills</li>
+              <li onClick={()=> setNav(false)} className='py-4 text-sm hover:text-[42px]'>Skills</li>
             </Link>
             <Link href='/#projects'>
-              <li onClick={()=> setNav(false)} className='py-4 text-sm'>Projects</li>
+              <li onClick={()=> setNav(false)} className='py-4 text-sm hover:text-[42px]'>Projects</li>
             </Link>
             <Link href='/#contact'>
-              <li onClick={()=> setNav(false)} className='py-4 text-sm'>Contact</li>
+              <li onClick={()=> setNav(false)} className='py-4 text-sm hover:text-[42px]'>Contact</li>
             </Link>
           </ul>
           <div className='pt-40 '>

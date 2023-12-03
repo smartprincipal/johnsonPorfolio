@@ -1,5 +1,5 @@
 import React from 'react'
-import MBBPIL from '../../public/assets/projects/MBBPIL.jpg'
+import MBBPIL from '../../public/assets/projects/MBBPIL.png'
 import Image from 'next/image'
 import {RiRadioButtonFill} from 'react-icons/ri'
 import Link from 'next/link'
@@ -12,8 +12,8 @@ const mbbpil = () => {
        <Image src={MBBPIL} alt='evogym-image' className='absolute z-1' layout='fill' objectFit='cover'/>
 
        <div className='absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2'>
-        <h2 className='py-2'>MBBPIL</h2>
-        <h3>React & CSS</h3>
+        <h2 className='py-2'>MBBPIL PARTNERS</h2>
+        <h3>React, CSS and Sass</h3>
        </div>
 
       </div>
@@ -24,12 +24,10 @@ const mbbpil = () => {
         <p>Project</p>
         <h2>Overview</h2>
         <p>
-            This app is built with React and it a project a colleague forsee to go life, it is hosted on vercel. Users
-            can register either on Welcome back platform or welcome platform of the app, user can also login , i used state management to pass data 
-            gotten from the backend to pages or components. On the app user can check their referral code, user can change password, user can click on forget password, user has a dashboard to see his/her performance using the app  and many more
+            This app is built with React framework. There are two platforms in this project Welcome back and Main platform of the app, on either platform user can register, login, check their referral code, user can change password, user can click on forget password, user has a dashboard to see his/her performance using the app. <br /> I used state management to pass data gotten from the endpoints to pages or components. <br /> I also implemented the admin dashboard and i styled it using SASS. <br />I consumed restful APIs gotten from the backend team
           </p>
-          <Link href='https://mbbpil.vercel.app/'>
-      <button className='px-8 py-2 mt-4 mr-8'>Demo</button>
+          <Link href='https://mbbpilpartners.com/'>
+      <button className='px-8 py-2 mt-4 mr-8'>Visit website</button>
           </Link>
       <button className='px-8 py-2 mt-4'>Code</button>
        
