@@ -26,7 +26,7 @@ const mbbpil = () => {
         <p>
             This app is built with React framework. There are two platforms in this project Welcome back and Main platform of the app, on either platform user can register, login, check their referral code, user can change password, user can click on forget password, user has a dashboard to see his/her performance using the app. <br /> I used state management to pass data gotten from the endpoints to pages or components. <br /> I also implemented the admin dashboard and i styled it using SASS. <br />I consumed restful APIs gotten from the backend team
           </p>
-          <Link href='https://mbbpilpartners.com/'>
+          <Link href='https://mbbusinesspartners.com/'>
       <button className='px-8 py-2 mt-4 mr-8'>Visit website</button>
           </Link>
       <button className='px-8 py-2 mt-4'>Code</button>

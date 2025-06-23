@@ -8,6 +8,7 @@ import MBBPIL from '../public/assets/projects/MBBPIL.png'
 import fitness from '../public/assets/projects/fitness.jpg'
 import ods from '../public/assets/projects/ods.png'
 import getsavey from '../public/assets/projects/getsavey.png'
+import gmp from '../public/assets/projects/gmp247.png'
 import Link from 'next/link'
 import Projectitem from './Projectitem'
 
@@ -20,6 +21,13 @@ const Projects = () => {
       <p className='text-xl tracking-widest uppercase text-[#9b9bcc]'>Projects</p>
       <h2 className='py-4'>What I Have Built</h2>
       <div className='grid md:grid-cols-2 gap-8'>
+
+      <Projectitem 
+       title='GMP ENTERTAINMENT 247' 
+       backgroundImg={gmp} 
+       projectUrl='/gmp'
+       build='Nextjs + Tailwind CSS'
+       />
 
       <Projectitem 
        title='Ogun Digital Summit' 
